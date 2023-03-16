@@ -8,7 +8,7 @@ export default class Popover {
       ? document.querySelector(target)
       : target;
     if (!(this.target instanceof HTMLElement)) {
-      throw new Error('Binding is not HTMLElement');
+      throw new Error('Target is not HTMLElement');
     }
 
     this._popover = null;
